@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador Alura</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body>
+        <header>
+            <div class="logo">
+                <h1><img src="recursos/Logo.png" alt="Logo de alura" class="logoAlura"></h1>
+                <!--alt permite ver el nombre de la imagen en caso de que no carge-->
+            </div>
+        </header>
+
+
+    
+        <main>
+            
+                <section class="parteImput">
+
+                    <textarea name="textareaInput"class="textoEncriptar" placeholder="Ingrese el texto aquí"></textarea>
+                    
+                    
+                    
+                    <p class="mensajeAlerta"> &#9888; Solo letras minúsculas y sin acentos</p>
+                    <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </section>
+                
+                <section class="parteOutput">
+
+
+                    <textarea name="textoResultado" class="textoResultado" id="textofinal"  ></textarea>
+
+                <div id="mensajeHayTexto">
+                    <p class="mensajenTextoNoEncontrado">
+                        Ningun mensaje fue encontrado
+                    </p>
+                    <p class="submensaje">
+                        Ingresa el texto que deseas encriptar o decencriptar
+                    </p>
+
+                </div>
+
+                <div id="elemento">
+                    <button class="Copiar" onclick="btnCopiar()" >copiar</button>
+                </div>  
+                    
+
+                </section>
+        </main>
+
+
+    <script src="script1.js"></script>
+
+
+    
+        <footer class="rodapie">
+            <a title="GitHub" href="https://github.com/ANDRESDNN"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="icono link github" width="30" height="30"/></a>
+            
+            <p > &copy Andrés Narváez 2022 </p>
+        </footer>
+
+        
+    </body>
+</html>
+
+
+<!-- cosas por agrergar
+    1. personalizar el diseño a mi manera
+    2. agregar imagenes de linkedin y github en mi rodapie
+    3. aun falta hacerlo responsive
+    -->
+
+
+
+
+
